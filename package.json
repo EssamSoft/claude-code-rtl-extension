@@ -1,0 +1,115 @@
+{
+	"name": "claude-code-rtl",
+	"displayName": "Claude Code RTL - دعم العربية",
+	"description": "تضيف دعم اتجاه النص من اليمين إلى اليسار (RTL) للعربية إلى Claude Code في VS Code و Cursor و Antigravity و Kiro",
+	"version": "0.5.1",
+	"publisher": "essam",
+	"license": "MIT",
+	"homepage": "https://github.com/EssamSoft/claude-code-rtl-extension#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/EssamSoft/claude-code-rtl-extension"
+	},
+	"bugs": {
+		"url": "https://github.com/EssamSoft/claude-code-rtl-extension/issues"
+	},
+	"engines": {
+		"vscode": "^1.94.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"arabic",
+		"arabic-language",
+		"bidi",
+		"bidirectional",
+		"claude-code",
+		"claude-code-plugin",
+		"cursor",
+		"cursor-extension",
+		"cursor-ide",
+		"cursor-plugin",
+		"antigravity",
+		"antigravity-extension",
+		"antigravity-ide",
+		"antigravity-plugin",
+		"kiro",
+		"kiro-extension",
+		"kiro-ide",
+		"kiro-plugin",
+		"rtl",
+		"rtl-support",
+		"vs-code",
+		"vs-code-extension",
+		"vscode",
+		"vscode-extension",
+		"right-to-left",
+		"text-direction",
+		"claude",
+		"anthropic",
+		"ai-chat"
+	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"badges": [
+		{
+			"url": "https://img.shields.io/github/stars/EssamSoft/claude-code-rtl-extension?style=social",
+			"href": "https://github.com/EssamSoft/claude-code-rtl-extension/stargazers",
+			"description": "Star on GitHub"
+		}
+	],
+	"icon": "claude-code-rtl-logo.png",
+	"main": "./dist/extension.js",
+	"contributes": {
+		"configuration": {
+			"title": "Claude Code RTL",
+			"properties": {
+				"claude-code-rtl.textFont": {
+					"type": "string",
+					"default": "",
+					"markdownDescription": "Font family for text/prose areas in Claude Code (e.g. `Tahoma`, `Noto Naskh Arabic`). Leave empty to keep Claude Code's default font."
+				},
+				"claude-code-rtl.codeFont": {
+					"type": "string",
+					"default": "",
+					"markdownDescription": "Font family for code blocks in Claude Code (e.g. `JetBrains Mono`, `Fira Code`). Leave empty to keep Claude Code's default font."
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "claude-rtl.add",
+				"title": "Claude RTL: Activate RTL"
+			},
+			{
+				"command": "claude-rtl.addAlways",
+				"title": "Claude RTL: Activate RTL (Always)"
+			},
+			{
+				"command": "claude-rtl.addAuto",
+				"title": "Claude RTL: Activate RTL (Auto)"
+			},
+			{
+				"command": "claude-rtl.remove",
+				"title": "Claude RTL: Deactivate RTL"
+			},
+			{
+				"command": "claude-rtl.fixBidi",
+				"title": "Claude RTL: Fix BiDi"
+			},
+			{
+				"command": "claude-rtl.status",
+				"title": "Claude RTL: Check Status"
+			}
+		]
+	},
+	"scripts": {
+		"package": "npx @vscode/vsce package",
+		"publish": "npx @vscode/vsce publish"
+	},
+	"author": {
+		"name": "Essam Salah"
+	}
+}

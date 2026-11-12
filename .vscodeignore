@@ -1,0 +1,8 @@
+assets/eye.png
+**/*.bak
+.DS_Store
+node_modules/**
+test/**
+src/**
+*.vsix
+.gitignore
