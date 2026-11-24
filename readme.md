@@ -7,7 +7,6 @@
 
 ### 🎬 عرض توضيحي
 
-<img src="https://github.com/EssamSoft/claude-code-rtl-extension/raw/HEAD/assets/rtl-btn.gif" alt="زر RTL" width="600">
 
 <img src="https://github.com/EssamSoft/claude-code-rtl-extension/raw/HEAD/assets/status-bar.gif" alt="شريط الحالة" width="600">
 
